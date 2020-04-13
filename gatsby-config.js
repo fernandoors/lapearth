@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Lap of the Earth`,
+    description: `Show how many objects are necessary to complete one Lap of the Earth. Ex. How many Cards to compleate a Lap of the Earth`,
+    author: `@fernandoors and @BrPadilha`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,7 +14,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-5085086136982290`
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -27,8 +34,19 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GA_TRACKING_ID,
+    //     head: false,
+    //     anonymize: true,
+    //     respectDNT: true,
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-offline`,
   ],
 }
