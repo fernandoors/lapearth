@@ -16,7 +16,7 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-styled-components": "^3.2.1",
-    "sharp": "^0.25.2",
+    "sharp": "^0.30.5",
     "styled-components": "^5.0.1",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
